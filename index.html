@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pomodoro</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div id="countdown-wrapper">
+				<span id="minutes">25</span>
+				<span id="seconds">00</span>
+			</div>
+			<h3 id="'session-heading">Session</h3>
+			<div id="options-wrapper">
+				<div id="session-time">
+					<p>session time</p>
+					<span id="session-value">25</span><span id="session-min"> mins</span>
+					<div class="buttons">
+						<button class="change-value minus">-</button>
+						<button class="change-value plus">+</button>
+					</div>
+				</div>
+				<div id="break-time">
+					<p>break time</p>
+					<span id="break-value">5</span> <span id="break-min"> mins</span>
+					<div class="buttons">
+						<button class="change-value minus">-</button>
+						<button class="change-value plus">+</button>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-buttons">
+				<button class="set-reset" id="pause">Start</button>
+				<button class="set-reset" id="reset">Reset</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

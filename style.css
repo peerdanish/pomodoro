@@ -1,0 +1,128 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	height: 100vh;
+	background-color: #d29e4e;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+	width: 220px;
+	height: 460px;
+	background-color: rgba(74, 62, 51, 0.8);
+	box-shadow: -1px 7px 48px -8px rgba(0, 0, 0, 0.52);
+	border-radius: 5px;
+}
+#countdown-wrapper {
+	height: 50%;
+	background-color: white;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 11px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	color: rgb(16, 183, 183);
+	border: 9px gray solid;
+	margin-bottom: 20px;
+	font-family: monospace;
+}
+#minutes::after {
+	content: ':';
+}
+
+h3 {
+	color: white;
+	text-align: center;
+	border-bottom: 1px dotted white;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+.change-value {
+	height: 12px;
+	width: 30px;
+	padding: 8px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.buttons {
+	display: flex;
+	margin-top: 10px;
+	justify-content: center;
+}
+.buttons button {
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	border: 0px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.plus {
+	margin-left: 5px;
+}
+#options-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+#options-wrapper p {
+	font-size: 0.8rem;
+	color: white;
+}
+#session-value {
+	color: #27979f;
+	font-weight: bold;
+	margin-left: 5px;
+}
+#break-value {
+	color: rgb(213, 130, 105);
+	font-weight: bold;
+	margin-left: 5px;
+}
+.bottom-buttons {
+	display: flex;
+	justify-content: space-evenly;
+	border-top: 1px dotted white;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	width: 90%;
+	margin: 0 auto;
+}
+.set-reset {
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: 0px;
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	width: 60px;
+}
+#break-min {
+	color: rgb(213, 130, 105);
+	font-weight: bold;
+}
+#session-min {
+	color: #27979f;
+	font-weight: bold;
+}
+#blink {
+	animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
